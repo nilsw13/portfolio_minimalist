@@ -69,7 +69,7 @@ export default function MissionsSection() {
                                <span>
                                 <Link href={mission.link}>
                                 
-                                <ExternalLink className="text-gray-600 w-4 h-4"/>
+                                <ExternalLink className="text-gray-600 hover:text-gray-900 w-4 h-4"/>
                                 </Link>
                                 </span>
                                </div>

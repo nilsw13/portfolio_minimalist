@@ -23,9 +23,9 @@ export default function HeaderNav() {
         <span className="font-semibold text-lg">Portfolio</span>
 
         {!isMobile ? (
-          <div className="flex justify-center font-medium gap-6 text-base">
+          <div className="flex justify-center text-gray-700 font-medium gap-6 text-base">
             {navItems.map((nav) => (
-              <Link key={nav.id} href={nav.link}>{nav.title}</Link>
+              <Link className="hover:text-gray-900" key={nav.id} href={nav.link}>{nav.title}</Link>
             ))}
           </div>
         ) : (
@@ -58,7 +58,7 @@ export default function HeaderNav() {
           {/* Liens */}
           <div className="flex flex-col items-center gap-6 font-medium text-xl">
             {navItems.map((nav) => (
-              <Link key={nav.id} href={nav.link} onClick={() => setMenuIsOpen(false)}>
+              <Link key={nav.id} className="" href={nav.link} onClick={() => setMenuIsOpen(false)}>
                 {nav.title}
               </Link>
             ))}
