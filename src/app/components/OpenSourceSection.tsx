@@ -1,4 +1,4 @@
-import { Dot, ExternalLink, ExternalLinkIcon, Github,  Link2Icon, Mail } from "lucide-react"
+import { Dot,  ExternalLinkIcon, Github } from "lucide-react"
 import Link from "next/link"
 
 export default function OpenSourceSection() {

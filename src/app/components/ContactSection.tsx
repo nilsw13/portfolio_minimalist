@@ -1,4 +1,3 @@
-import { link } from "fs"
 import { Github, Linkedin, MailIcon } from "lucide-react"
 import Link from "next/link"
 
