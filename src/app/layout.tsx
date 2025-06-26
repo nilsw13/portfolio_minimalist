@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable}  antialiased bg-white` }
+        className={`${inter.variable} overflow-x-hidden  antialiased bg-white` }
       >
 
         <HeaderNav/>
