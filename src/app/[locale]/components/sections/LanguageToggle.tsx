@@ -35,7 +35,7 @@ export default function LanguageToggle() {
     setTimeout(() => {
       startTransition(() => {
         router.replace(
-          // @ts-expect-error
+          // @ts-expect-error Next.js router.replace typing does not support object with params
           { pathname, params },
           { locale: nextLocale }
         );

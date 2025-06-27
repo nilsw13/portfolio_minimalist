@@ -5,7 +5,6 @@ import Image from "next/image"
 import { useIsMobile } from "../../hooks/use-isMobile"
 import Link from "next/link"
 import LanguageToggle from "../sections/LanguageToggle"
-import { AlignVerticalSpaceBetween, SlashIcon } from "lucide-react"
 
 export default function HeaderNav() {
   const navItems = [
