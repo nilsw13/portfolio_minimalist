@@ -13,9 +13,17 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: "Nils Wenting ",
+  title: "Nils Wenting",
   description: "Nils Wenting Dev portfolio",
+  icons: [
+    {
+      rel: "icon",
+      url: "/hamburger-color.png",
+      type: "image/png",
+    },
+  ],
 };
+
 
 export default function RootLayout({
   children,
@@ -24,6 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+    <link rel="icon" href="/hamburger-color.png" type="image/png" sizes="32x32" />
+  </head>
       <body
         className={`${inter.variable} overflow-x-hidden  antialiased bg-white` }
       >
