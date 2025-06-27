@@ -52,7 +52,7 @@ export default function HeaderNav() {
         <div className="flex flex-col items-center pt-6">
           {/* Bouton fermer */}
           <div className="cursor-pointer mb-8" onClick={() => setMenuIsOpen(false)}>
-            <Image src="/hamburger-color.png" width={40} height={40} alt="close menu" />
+            <Image src="/hamburger-color.png" width={30} height={30} alt="close menu" />
           </div>
 
           {/* Liens */}
