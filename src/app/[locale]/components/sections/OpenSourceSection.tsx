@@ -1,14 +1,17 @@
 import {   ExternalLinkIcon, Github } from "lucide-react"
+import { useTranslations } from "next-intl"
 import Link from "next/link"
 
 export default function OpenSourceSection() {
+
+    const t = useTranslations()
 
 
     const repos = [
         {
             id: 0,
             title : "spring-replicate-client",
-            description: "Client web pour consommer l'API Replicate avec Spring Boot. Disponible sur Maven Central.",
+            description: "open_source_section.projects_list.replicate_client_descr",
             stack : "Java",
             link: "https://github.com/nilsw13/spring-boot-replicate"
             
@@ -17,9 +20,9 @@ export default function OpenSourceSection() {
         {
             id: 1, 
             title : "saas-starter-kit",
-            description : "Starter kit de création de SAAS avec choix de multiples frameworks frontend et backend Spring Boot.",
+            description : "open_source_section.projects_list.saas_starter_descr",
             stack : "Java", 
-            status: "En développement",
+            status: "open_source_section.projects_list.status",
             link : "https://github.com/nilsw13/starter-kit-cli"
         }
 
@@ -45,7 +48,7 @@ export default function OpenSourceSection() {
                                                     <span className="font-medium tracking-tight text-lg text-gray-900">{repo.title}</span>
                                                 </div>
 
-                                                <span className="text-gray-600 text-sm">{repo.description}</span>
+                                                <span className="text-gray-600 text-sm">{t(repo.description)}</span>
 
                                                 <div className="flex gap-8 items-center">
 
@@ -53,7 +56,7 @@ export default function OpenSourceSection() {
                                                         <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                                                             <span className="text-gray-400">{repo.stack}</span>
                                                             </div>
-                                                        {repo.status && <div className="text-xs inline-flex items-center justify-center border border-gray-400 font-semibold rounded-xl px-2.5 py-0.5">{repo.status}</div>}
+                                                        {repo.status && <div className="text-xs inline-flex items-center justify-center border border-gray-400 font-semibold rounded-xl px-2.5 py-0.5">{t(repo.status)}</div>}
                                                 </div>
 
 

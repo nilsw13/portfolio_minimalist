@@ -1,0 +1,31 @@
+{
+    "herosection": {
+        "description": "Java Spring Developer. I design robust backend systems and scalable applications with a clean architecture.",
+        "contact_button": "Contact me",
+        "see_project_button": "See my projects"
+    },
+
+    "missions_section": {
+        "title": "Selected Missions",
+        "missions_list": {
+            "nylso_descr": "Development of a modern and high-performance landing page for a digital agency.",
+            "ite_descr": "Showcase website for a multidisciplinary design office specialized in technical engineering.",
+            "shp_descr": "MVP of a SaaS for an AI photo studio enabling automatic generation of professional portraits.",
+            "kmc_descr": "Showcase website for a currency exchange office and automation."
+        }
+    },
+
+    "open_source_section": {
+        "title": "Open Source",
+        "projects_list": {
+            "replicate_client_descr": "Web client to consume the Replicate API with Spring Boot. Available on Maven Central.",
+            "saas_starter_descr": "Starter kit for creating SaaS with a choice of multiple frontend frameworks and Spring Boot backend.",
+            "status" : "Under development"
+        }
+    },
+
+    "contact_section": {
+        "title": "Contact",
+        "description": "Available for new opportunities. Let’s discuss how we can work together"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "herosection" : {
+        "description": "Développeur Java Spring. Je conçois des systèmes backend robustes et des applications scalables avec une architecture propre.",
+        "contact_button" : "Me contacter",
+        "see_project_button": "Voir mes projets"
+    },
+
+    "missions_section": {
+        "title" : "Missions Séléctionnées",
+        "missions_list": {
+            "nylso_descr" : "Développement d'une landing page moderne et performante pour une agence digitale.",
+            "ite_descr" : "Site vitrine pour un bureau d'étude pluridisciplinaire spécialisé dans l'ingénierie technique.",
+            "shp_descr" : "MVP d'un SAAS pour studio photo IA permettant la génération automatique de portraits professionnels.",
+            "kmc_descr": "Site vitrine pour un bureau de change de devises et automatisation."
+        }
+    },
+
+    "open_source_section" : {
+        "title" : "Open Source",
+        "projects_list": {
+            "replicate_client_descr" : "Client web pour consommer l'API Replicate avec Spring Boot. Disponible sur Maven Central.",
+            "saas_starter_descr" : "Starter kit de création de SAAS avec choix de multiples frameworks frontend et backend Spring Boot.",
+            "status" : "En développement"
+        }
+    },
+
+    "contact_section" : {
+        "title" : "Contact",
+        "description" : "Disponible pour de nouvelles opportunités. Discutons de la façon dont nous pouvons travailler ensemble " 
+    }
+}

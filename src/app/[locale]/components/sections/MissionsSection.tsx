@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react"
+import { useTranslations } from "next-intl";
 
 import { Roboto_Mono } from "next/font/google";
 import Link from "next/link";
@@ -9,13 +10,15 @@ const robotoMono = Roboto_Mono({
 
 export default function MissionsSection() {
 
+    const t = useTranslations()
+
 
     const missions = [
         {
             id: 0,
             year: 2025, 
             title : "Agence Nylso",
-            description : "Développement d'une landing page moderne et performante pour une agence digitale.",
+            description : "missions_section.missions_list.nylso_descr",
             stack : ["Next.js", "Tailwind CSS", "TypeScript"],
             link : "https://nylso-landing-page.vercel.app/"
 
@@ -25,7 +28,7 @@ export default function MissionsSection() {
             id: 1, 
             year: 2025,
             title: "ITE-Partenaires",
-            description: "Site vitrine pour un bureau d'étude pluridisciplinaire spécialisé dans l'ingénierie technique.",
+            description: "missions_section.missions_list.ite_descr",
             stack: ["Spring Boot", "React", "PostgreSQL"],
             link : "https://courageous-starship-95343a.netlify.app/"
         },
@@ -34,7 +37,7 @@ export default function MissionsSection() {
             id:2, 
             year: 2024,
             title: "Studio Headshot Pro", 
-            description: "MVP d'un SAAS pour studio photo IA permettant la génération automatique de portraits professionnels.",
+            description: "missions_section.missions_list.shp_descr",
             stack : ["Spring boot", "React", "PostgreSQL", "AWS", "Replicate API", "Stripe"],
             link : "https://studioheadshotpro.com/"
 
@@ -44,7 +47,7 @@ export default function MissionsSection() {
             id: 3, 
             year: 2023,
             title: "KM CHANGE",
-            description: "Site vitrine pour un bureau de change de devises et automatisation.",
+            description: "missions_section.missions_list.kmc_descr",
             stack : ["Spring boot", "React", "Selenium", "Cron", "PostgreSQL"],
             link : "https://kmchange.fr/"
         }
@@ -55,7 +58,7 @@ export default function MissionsSection() {
 
                 <div className="max-w-5xl py-20 mx-auto  px-4">
 
-                    <h2 className="text-2xl md:text-3xl mb-12">Missions Sélectionnées</h2>
+                    <h2 className="text-2xl md:text-3xl mb-12">{t('missions_section.title')}</h2>
 
                     <div className="flex flex-col gap-6 ">
                         {missions.map((mission) => (
@@ -75,7 +78,7 @@ export default function MissionsSection() {
                                </div>
                                 </div>
 
-                                <div className="mb-4 text-base leading-relaxed text-gray-600">{mission.description}</div>
+                                <div className="mb-4 text-base leading-relaxed text-gray-600">{t(mission.description)}</div>
 
                                 <div className="font-semibold flex flex-wrap items-center gap-2">
                                     {

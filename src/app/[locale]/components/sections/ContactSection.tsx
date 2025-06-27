@@ -1,7 +1,10 @@
 import { Github, Linkedin, MailIcon } from "lucide-react"
+import { useTranslations } from "next-intl"
 import Link from "next/link"
 
 export default function ContactSection() {
+
+    const t = useTranslations()
 
         const contacts = [
             {
@@ -35,7 +38,7 @@ export default function ContactSection() {
 
                     <h2 className="text-2xl md:text-3xl mb-12">Contact</h2>
 
-                        <div className="max-w-xl text-gray-600 leading-relaxed text-lg mb-8"> Disponible pour de nouvelles opportunités. Discutons de la façon dont nous pouvons travailler ensemble </div>
+                        <div className="max-w-xl text-gray-600 leading-relaxed text-lg mb-8">{t("contact_section.description")} </div>
 
 
                         <div className="flex flex-col  md:flew-wrap gap-20 lg:flex-row">

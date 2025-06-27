@@ -2,15 +2,19 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { useIsMobile } from "../hooks/use-isMobile"
+import { useIsMobile } from "../../hooks/use-isMobile"
 import Link from "next/link"
+import LanguageToggle from "../sections/LanguageToggle"
+import { AlignVerticalSpaceBetween, SlashIcon } from "lucide-react"
 
 export default function HeaderNav() {
   const navItems = [
-    { id: 0, title: "Accueil", link: "#top" },
-    { id: 1, title: "Missions", link : "#missions" },
-    { id: 2, title: "Open Source", link: "#open-source" },
-    { id: 3, title: "Contact" , link: "#contact"},
+   
+   
+    { id: 3, title: "Missions", link : "#missions" },
+    { id: 4, title: "Open Source", link: "#open-source" },
+    { id: 5, title: "Contact" , link: "#contact"},
+    
   ]
 
   const isMobile = useIsMobile()
@@ -23,14 +27,22 @@ export default function HeaderNav() {
         <span className="font-semibold text-lg">Portfolio</span>
 
         {!isMobile ? (
-          <div className="flex justify-center text-gray-700 font-medium gap-6 text-base">
+          <div className="flex justify-center items-center text-gray-700 font-medium gap-6 text-base">
+            
+               
+            
             {navItems.map((nav) => (
               <Link className="hover:text-gray-900" key={nav.id} href={nav.link}>{nav.title}</Link>
             ))}
+
+                <LanguageToggle/>
           </div>
         ) : (
+          <div className="flex items-center gap-4">
+            <LanguageToggle/>
           <div className="cursor-pointer" onClick={() => setMenuIsOpen(true)}>
             <Image src="/hamburger.png" width={30} height={30} alt="open menu" />
+          </div>
           </div>
         )}
       </div>
@@ -56,12 +68,15 @@ export default function HeaderNav() {
           </div>
 
           {/* Liens */}
-          <div className="flex flex-col items-center gap-6 font-medium text-xl">
+          <div className="flex flex-col items-center gap-6 font-medium text-lg">
+           
             {navItems.map((nav) => (
               <Link key={nav.id} className="" href={nav.link} onClick={() => setMenuIsOpen(false)}>
                 {nav.title}
               </Link>
             ))}
+
+            
           </div>
         </div>
       </div>
