@@ -58,17 +58,17 @@ export default function LanguageToggle() {
         <button
           onClick={handleLanguageChange}
           disabled={isPending || isAnimating}
-          className={`absolute left-0 top-0 w-7 h-7 shadow-lg bg-white border rounded-full cursor-pointer transform transition-all duration-500 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)]  hover:shadow-xl active:scale-95 ${
+          className={`absolute left-0 top-0  h-7 w-7  shadow-lg bg-white border rounded-full cursor-pointer transform transition-all duration-500 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)]  hover:shadow-xl active:scale-95 ${
             visualState === "en" ? "translate-x-11" : "translate-x-0"
           }`}
         >
           <div className="w-full h-full p-1 flex items-center justify-center">
             <Image
-              src={visualState === "en" ? "/tea-time.png" : "/pain.png"}
+              src={visualState === "en" ? "/tea-time.svg" : "/pain.svg"}
               alt={visualState === "en" ? "English" : "Français"}
               width={18}
               height={18}
-              className="transition-transform duration-200 ease-out"
+              className={`${visualState === "fr" ? "p-0.5" : "w-8 h-8"} transition-transform duration-200 ease-out`}
             />
           </div>
         </button>

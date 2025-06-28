@@ -48,6 +48,7 @@ if (!hasLocale(routing.locales, locale)) {
   return (
     <html lang={locale}>
        <head>
+       <link rel="icon" href="/hamburger.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="/hamburger-color.png" type="image/png" sizes="32x32" />
   </head>
       <body
