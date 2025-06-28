@@ -2,7 +2,6 @@
 import { useState, useEffect, useTransition } from "react";
 import { useParams } from 'next/navigation';
 import { useLocale } from 'next-intl';
-import Image from "next/image";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { TeaTimeIcon } from "../icons/TeaTimeIcon";
 import { PainIcon } from "../icons/PainIcon";
