@@ -3,6 +3,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import LanguageToggle from "../sections/LanguageToggle"
+import HamburgerIcon from "../icons/HamburgerIcon"
 
 export default function HeaderNav() {
   const navItems = [
@@ -36,7 +37,7 @@ export default function HeaderNav() {
         <div className="flex md:hidden items-center gap-4">
           <LanguageToggle />
           <div className="cursor-pointer" onClick={() => setMenuIsOpen(true)}>
-            <Image src="/hamburger.svg" loading="lazy" width={30} height={30} alt="open menu" />
+            <HamburgerIcon/>
           </div>
         </div>
       </div>
