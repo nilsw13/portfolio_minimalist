@@ -4,6 +4,8 @@ import { useParams } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import Image from "next/image";
 import { usePathname, useRouter } from "@/i18n/navigation";
+import { TeaTimeIcon } from "../icons/TeaTimeIcon";
+import { PainIcon } from "../icons/PainIcon";
 
 export default function LanguageToggle() {
   const router = useRouter();
@@ -63,14 +65,13 @@ export default function LanguageToggle() {
           }`}
         >
           <div className="w-full h-full p-1 flex items-center justify-center">
-            <Image
-              src={visualState === "en" ? "/tea-time.svg" : "/pain.svg"}
-              alt={visualState === "en" ? "English" : "Français"}
-              width={18}
-              height={18}
-              className={`${visualState === "fr" ? "p-0.5" : "w-8 h-8"} transition-transform duration-200 ease-out`}
-            />
+            {visualState === "en" ? (
+              <TeaTimeIcon className="transition-transform duration-200 ease-out w-8 h-8" />
+            ) : (
+              <PainIcon className="transition-transform duration-200 ease-out p-0.5" />
+            )}
           </div>
+
         </button>
       </div>
       
