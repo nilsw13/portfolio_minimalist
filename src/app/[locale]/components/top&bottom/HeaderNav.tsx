@@ -20,13 +20,13 @@ export default function HeaderNav() {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
 
   return (
-    <div className="w-full sticky top-0 z-50 border-b border-gray-100 py-4 backdrop-blur-sm bg-white/70">
+    <div className="w-full sticky  top-0 z-50 border-b border-gray-100 py-4 backdrop-blur-sm bg-white/70">
 
       <div className="max-w-5xl px-4 flex mx-auto items-center justify-between py-1">
         <span className="font-semibold text-lg">Portfolio</span>
 
         {!isMobile ? (
-          <div className="flex justify-center items-center text-gray-700 font-medium gap-6 text-base">
+          <div className=" hidden  md:flex md:justify-center md:items-center text-gray-700 font-medium gap-6 text-base">
             
                
             
