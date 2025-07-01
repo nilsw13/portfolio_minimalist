@@ -20,7 +20,7 @@ export default function MissionsSection() {
             title : "Agence Nylso",
             description : "missions_section.missions_list.nylso_descr",
             stack : ["Next.js", "Tailwind CSS", "TypeScript"],
-            link : "https://nylso-landing-page.vercel.app/"
+            link : "https://www.nylso.fr/"
 
         },
 
